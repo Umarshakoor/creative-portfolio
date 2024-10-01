@@ -34,15 +34,7 @@ const navMenu = [
 
 const Navbar = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "120px",
-        justifyContent: "flex-end",
-        alignItems: "end",
-        marginBottom: "30px",
-      }}
-    >
+    <div className="nav-div">
       <ul className="nav-ul">
         {navMenu.map((item, i) => (
           <li key={i} className="">

@@ -8,6 +8,19 @@
   width: 430px;
   border-radius: 10px;
   background: #f5f9fc;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+.nav-div {
+  display: flex;
+  height: 120px;
+  justify-content: flex-end;
+  align-items: end;
+  margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .nav-ul li a {

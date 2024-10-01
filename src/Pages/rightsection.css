@@ -10,6 +10,9 @@
   margin-left: 30px;
   border: none;
   background: linear-gradient(90deg, #fe9119, #fe1919);
+  @media screen and (max-width: 571px) {
+    width: 100px;
+  }
 }
 .abt-line {
   display: flex;
@@ -72,6 +75,9 @@
   max-width: 400px;
   height: 200px;
   padding: 20px;
+  @media screen and (max-width: 571px) {
+    height: auto;
+  }
 }
 .color {
   background-color: #ffebd1;

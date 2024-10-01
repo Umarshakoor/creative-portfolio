@@ -67,6 +67,7 @@ header {
   margin-left: 60px;
   @media screen and (max-width: 1200px) {
     flex: 100%;
+    margin-left: 0;
   }
 }
 
@@ -79,5 +80,6 @@ header {
   margin-bottom: 20px;
   @media screen and (max-width: 1200px) {
     flex: 100%;
+    margin: 0 20px 20px;
   }
 }
