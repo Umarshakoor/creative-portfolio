@@ -1,0 +1,78 @@
+.abt-line > h2 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: 450;
+}
+.about-hr-line {
+  width: 200px;
+  height: 2px;
+  margin-left: 30px;
+  border: none;
+  background: linear-gradient(90deg, #fe9119, #fe1919);
+}
+.abt-line {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+.skills > h2 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 2rem;
+  font-weight: 450;
+  margin: 15px auto;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 20px;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+.logo-name > h4 {
+  margin-left: 5px;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.logo-name + p {
+  /* text-align: center; */
+  vertical-align: middle;
+}
+
+.skill-1 {
+  flex: 40%;
+  border-radius: 15px;
+}
+.skill-2 {
+  flex: 40%;
+  background-color: #f2f7fc;
+  border-radius: 15px;
+}
+.skill-3 {
+  flex: 40%;
+  background-color: #f2f7fc;
+  border-radius: 15px;
+}
+.skill-4 {
+  flex: 40%;
+  border-radius: 15px;
+}
+
+.size {
+  min-width: 300px;
+  width: 300px;
+  max-width: 400px;
+  height: 200px;
+  padding: 20px;
+}
+.color {
+  background-color: #ffebd1;
+}

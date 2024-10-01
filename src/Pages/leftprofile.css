@@ -1,0 +1,118 @@
+.div-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+.card-wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 0 60px; */
+  position: relative;
+  border-radius: 10px;
+  min-width: 350px;
+  width: 380px;
+  max-width: 400px;
+}
+.card-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  top: -50px;
+}
+
+.info-wrapper {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-main-name {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card-profile-title {
+  font-family: "raleway";
+  font-weight: 400;
+  font-size: 12px;
+  margin: 10px auto;
+}
+.social-logo-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.social-logo {
+  background-color: #f2f7fc;
+  color: black;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb {
+  color: #1877f2;
+}
+.ln {
+  color: #0077b5;
+}
+.tw {
+  color: #1da1f2;
+}
+.card-contact-wrapper {
+  margin: 20px 0;
+  background-color: #f2f5f9;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.card-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.direc-column {
+  display: flex;
+  flex-direction: column;
+  font-family: "raleway";
+  font-weight: 700;
+}
+.line {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 10%);
+  margin: 15px 0;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #fff;
+  background: linear-gradient(45deg, #ff9c1a 10%, #ed250a 90%);
+  font-family: "raleway";
+  font-size: 12px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  gap: 2px;
+}
+
+.contact-head {
+  color: rgba(0, 0, 0, 50%);
+  font-weight: 700;
+  font-size: 12px;
+}
