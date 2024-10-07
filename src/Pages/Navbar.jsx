@@ -4,6 +4,7 @@ import { BsBag } from "react-icons/bs";
 import { BiSolidContact } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "./navmenu.css";
+import { useState } from "react";
 
 const navMenu = [
   {
@@ -33,12 +34,19 @@ const navMenu = [
 ];
 
 const Navbar = () => {
+  const [path, setPath] = useState("/");
+  console.log(path);
+
   return (
     <div className="nav-div">
       <ul className="nav-ul">
         {navMenu.map((item, i) => (
           <li key={i} className="">
-            <Link to={item.path} className="nav-link">
+            <Link
+              to={item.path}
+              className="nav-link"
+              onClick={() => setPath(item.path)}
+            >
               <div className="item-icon">{item.icon}</div>
               <div className="item-title">{item.title}</div>
             </Link>

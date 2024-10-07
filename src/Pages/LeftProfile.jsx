@@ -8,6 +8,7 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const profileDetail = [
   {
@@ -53,25 +54,38 @@ const LeftProfile = () => {
           <h4 className="card-profile-title">{profileDetail[0].title}</h4>
         </div>
         <div className="social-logo-wrapper">
-          <div className="social-logo fb">
-            {profileDetail[0].logos[0].facebook}
-          </div>
-          <div className="social-logo ln">
-            {profileDetail[0].logos[0].linkedin}
-          </div>
-          <div className="social-logo tw">
-            {profileDetail[0].logos[0].twitter}
-          </div>
-          <div className="social-logo gh">
-            {profileDetail[0].logos[0].github}
-          </div>
+          <Link to="https://www.facebook.com/umarshakoor42" target="_blank">
+            <div className="social-logo fb">
+              {profileDetail[0].logos[0].facebook}
+            </div>
+          </Link>
+          <Link to="https://www.linkedin.com/in/umarshakoor" target="_blank">
+            <div className="social-logo ln">
+              {profileDetail[0].logos[0].linkedin}
+            </div>
+          </Link>
+          <Link to="https://www.twitter.com/" target="_blank">
+            <div className="social-logo tw">
+              {profileDetail[0].logos[0].twitter}
+            </div>
+          </Link>
+          <Link to="https://www.github.com/umarshakoor" target="_blank">
+            <div className="social-logo gh">
+              {profileDetail[0].logos[0].github}
+            </div>
+          </Link>
         </div>
         <div className="card-contact-wrapper">
           <div className="card-contact">
             {profileDetail[0].logos[1].phone}
             <div className="direc-column">
               <p className="contact-head">Phone</p>
-              {profileDetail[0].phone}
+              <a
+                href="tel:+923184436794"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                {profileDetail[0].phone}
+              </a>
             </div>
           </div>
           <hr className="line" />
@@ -79,7 +93,12 @@ const LeftProfile = () => {
             {profileDetail[0].logos[1].email}
             <div className="direc-column">
               <p className="contact-head">Email</p>
-              {profileDetail[0].email}
+              <a
+                href="mailto:umarshakoor2000@gmail.com"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                {profileDetail[0].email}
+              </a>
             </div>
           </div>
           <hr className="line" />

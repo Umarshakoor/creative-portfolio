@@ -5,6 +5,8 @@ import { StateContext } from "../store/AppState";
 import Navbar from "./Navbar";
 import LeftProfile from "./LeftProfile";
 import RightSection from "./RightSection.jsx";
+import Resume from "./Resume.jsx";
+import { Route, Routes } from "react-router-dom";
 
 const Website = () => {
   const { mode, toggleMode } = useContext(StateContext);
@@ -25,10 +27,18 @@ const Website = () => {
       </nav>
       <aside className="left-right">
         <div className="left-profile-card">
-          <LeftProfile />
+          <Routes>
+            <Route path="/" element={<LeftProfile />} />
+            <Route path="/resume" element={<LeftProfile />} />
+            <Route path="/work" element={<LeftProfile />} />
+            <Route path="/contact" element={<LeftProfile />} />
+          </Routes>
         </div>
         <div className="right-section">
-          <RightSection />
+          <Routes>
+            <Route path="/" element={<RightSection />} />
+            <Route path="/work" element={<Resume />} />
+          </Routes>
         </div>
       </aside>
       <main></main>

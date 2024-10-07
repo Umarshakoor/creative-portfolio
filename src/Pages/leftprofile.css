@@ -64,6 +64,10 @@
   justify-content: center;
 }
 
+.social-logo:hover {
+  background-color: #ff9c1a;
+}
+
 .fb {
   color: #1877f2;
 }

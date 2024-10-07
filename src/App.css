@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin: auto;
+  max-width: 400px;
+}
+
+form h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+label {
+  margin-right: 1em;
+  font-weight: bold;
+}
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.btn-submit {
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  padding: 0.5em 1rem;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  transform: scale(1.1);
+  transition: all, 0.5s;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  margin-top: 2em;
+}
+.post-container h2 {
+  text-align: center;
+  margin-top: 0;
+  grid-column: 1/-1;
+}
+
+.post-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: relative;
+}
+.post-title {
+  margin-top: 0;
+}
+.post-body {
+  margin-bottom: 50px;
+}
+
+.btn-delete {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  right: 10%;
+  font-size: 16px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+.btn-delete:hover,
+.btn-delete:focus {
+  transform: scale(1.1);
+  transition: all, 0.5s;
+}
