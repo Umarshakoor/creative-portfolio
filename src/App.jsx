@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 // import ReactDOM from "react-dom/client";
 import "./App.css";
-// import Website from "./Pages/Website";
-import AddPost from "./components/AddPost";
-import Post from "./components/Post";
+import Website from "./Pages/Website";
+// import AddPost from "./components/AddPost";
+// import Post from "./components/Post";
 function App() {
-  const [posts, setPosts] = useState([]);
+  /*   const [posts, setPosts] = useState([]);
   console.log(posts);
   console.log(posts);
   const fetchPosts = async () => {
@@ -54,11 +54,11 @@ function App() {
         })
       );
     }
-  };
+  }; */
   return (
     <>
-      {/* <Website /> */}
-      <main>
+      <Website />
+      {/*       <main>
         <h1>consuming Rest Api with Axios and fetch</h1>
         <AddPost addPost={addPost} />
         <section className="post-container">
@@ -73,7 +73,7 @@ function App() {
             />
           ))}
         </section>
-      </main>
+      </main> */}
     </>
   );
 }
