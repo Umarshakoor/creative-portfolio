@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import ReactDOM from "react-dom/client";
 import "./App.css";
 // import Website from "./Pages/Website";
-import AddPost from "./components/addPost";
+import AddPost from "./components/AddPost";
 import Post from "./components/Post";
 function App() {
   const [posts, setPosts] = useState([]);
